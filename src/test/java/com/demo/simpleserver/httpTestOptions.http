@@ -1,0 +1,21 @@
+GET http://localhost:8080/api/customers
+
+###
+
+POST http://localhost:8080/api/customers
+Content-Type: application/json
+
+{
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john@email.com",
+    "dob": "2000-01-15"
+}
+
+###
+
+PUT http://localhost:8080/api/customers/1?firstName=Roy&email=roy@email.com
+
+###
+
+DELETE http://localhost:8080/api/customers/1
